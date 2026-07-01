@@ -8,7 +8,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 border-b border-gold/30 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="KBFC Logo" className="h-12 w-12 object-contain" />
+            <img src="/logo.png.PNG" alt="KBFC Logo" className="h-12 w-12 object-contain" />
             <div>
               <div className="text-gold font-bold text-sm">KBFC</div>
               <div className="text-gray-400 text-xs">Karibbean Bully Fanatics Club</div>
@@ -32,7 +32,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black z-10" />
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
           <img
-            src="/logo.png"
+            src="/logo.png.PNG"
             alt="KBFC"
             className="h-48 w-48 mx-auto mb-8 object-contain drop-shadow-2xl"
           />
@@ -185,7 +185,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img src="/logo.png" alt="KBFC" className="h-12 w-12 object-contain" />
+                <img src="/logo.png.PNG" alt="KBFC" className="h-12 w-12 object-contain" />
                 <div>
                   <div className="text-gold font-black">KBFC</div>
                   <div className="text-gray-500 text-xs">Karibbean Bully Fanatics Club</div>
