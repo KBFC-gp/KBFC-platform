@@ -16,8 +16,8 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm">
             <Link href="/" className="text-gold font-semibold">Accueil</Link>
-            <Link href="/adhesion" className="text-gray-300 hover:text-gold transition-colors">AdhÃ©sion</Link>
-            <Link href="/evenements" className="text-gray-300 hover:text-gold transition-colors">Ã‰vÃ©nements</Link>
+            <Link href="/adhesion" className="text-gray-300 hover:text-gold transition-colors">Adhésion</Link>
+            <Link href="/evenements" className="text-gray-300 hover:text-gold transition-colors">Évènement</Link>
             <Link href="/galerie" className="text-gray-300 hover:text-gold transition-colors">Galerie</Link>
             <Link href="/contact" className="text-gray-300 hover:text-gold transition-colors">Contact</Link>
             <Link href="/connexion" className="bg-gold text-black px-4 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors">
@@ -58,13 +58,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Ã‰VÃ‰NEMENT VEDETTE */}
+      {/* ÉVENEMENT VEDETTE */}
       <section className="py-20 px-4 bg-gradient-to-b from-black to-[#0a0a0a]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-gold text-sm font-bold tracking-widest uppercase">Ã‰vÃ©nement Phare</span>
+            <span className="text-gold text-sm font-bold tracking-widest uppercase">ÉVENEMENT Phare</span>
             <h2 className="text-3xl md:text-5xl font-black text-white mt-2">
-              NOS PROCHAINS <span className="text-gold">Ã‰VÃ‰NEMENTS</span>
+              NOS PROCHAINS <span className="text-gold">ÉVENEMENT</span>
             </h2>
           </div>
           <div className="bg-gradient-to-br from-[#1a1400] to-[#0d0d0d] border-2 border-gold rounded-2xl overflow-hidden mb-8">
@@ -80,13 +80,13 @@ export default function Home() {
                   <div className="grid grid-cols-2 gap-4 mb-8">
                     <div className="bg-black/50 rounded-xl p-4 border border-gold/20">
                       <div className="text-gold text-xs mb-1">ðŸ“… DATE</div>
-                      <div className="text-white font-bold">DÃ©cembre 2026</div>
+                      <div className="text-white font-bold">Décembre 2026</div>
                       <div className="text-gray-400 text-xs">Vacances scolaires</div>
                     </div>
                     <div className="bg-black/50 rounded-xl p-4 border border-gold/20">
                       <div className="text-gold text-xs mb-1">ðŸ“ LIEU</div>
                       <div className="text-white font-bold">Guadeloupe</div>
-                      <div className="text-gray-400 text-xs">CaraÃ¯bes franÃ§aises</div>
+                      <div className="text-gray-400 text-xs">Caraïbes franssaises</div>
                     </div>
                     <div className="bg-black/50 rounded-xl p-4 border border-gold/20">
                       <div className="text-gold text-xs mb-1">ðŸ • RACES</div>
@@ -135,10 +135,10 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
               { icon: "ðŸ •", titre: "Enregistrer vos chiens", desc: "GÃ©rez et valorisez vos compagnons" },
-              { icon: "ðŸ“…", titre: "Participer aux Ã©vÃ©nements", desc: "Shows, expositions, rencontres & plus" },
-              { icon: "ðŸ’³", titre: "Carte de membre", desc: "Carte numÃ©rique avec QR Code" },
-              { icon: "ðŸ †", titre: "CompÃ©titions officielles", desc: "Juges experts & rÃ¨glements clairs" },
-              { icon: "ðŸ¤ ", titre: "CommunautÃ© passionnÃ©e", desc: "Ã‰change, partage et entraide" },
+              { icon: "ðŸ“…", titre: "Participer aux Évenements", desc: "Shows, expositions, rencontres & plus" },
+              { icon: "ðŸ’³", titre: "Carte de membre", desc: "Carte numerique avec QR Code" },
+              { icon: "ðŸ †", titre: "Competitions officielles", desc: "Juges experts & reglements clairs" },
+              { icon: "ðŸ¤ ", titre: "Communautée passionnée", desc: "Ã‰change, partage et entraide" },
               { icon: "ðŸ“š", titre: "Ressources & documents", desc: "Guides, conseils, formations" },
             ].map((item) => (
               <div key={item.titre} className="bg-[#111] border border-gold/20 rounded-2xl p-6 hover:border-gold/60 transition-colors">
@@ -159,24 +159,24 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <span className="text-gold text-sm font-bold tracking-widest uppercase">Notre mission</span>
           <h2 className="text-3xl md:text-4xl font-black text-white mt-2 mb-8">
-            L'ORGANISATION CYNOPHILE <span className="text-gold">DES CARAÃ BES</span>
+            L'ORGANISATION CYNOPHILE <span className="text-gold">DES CARAÏBES</span>
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed mb-8">
             Le KBFC a pour mission de promouvoir les races canines, encourager un Ã©levage responsable,
-            organiser des Ã©vÃ©nements de qualitÃ© et rassembler les passionnÃ©s autour de valeurs fortes :
-            respect, excellence, bien-Ãªtre animal, culture et solidaritÃ©.
+            organiser des Évenements de qualit et rassembler les passionnÃ©s autour de valeurs fortes :
+            respect, excellence, bien-é.tre animal, culture et solidarité.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
             <div className="border-l-2 border-gold pl-4">
               <div className="text-gold font-bold mb-1">Respect</div>
-              <div className="text-gray-400 text-sm">Du chien, de l'Ã©leveur, de la communautÃ©</div>
+              <div className="text-gray-400 text-sm">Du chien, de l'Éleveur, de la communauté</div>
             </div>
             <div className="border-l-2 border-gold pl-4">
               <div className="text-gold font-bold mb-1">Excellence</div>
-              <div className="text-gray-400 text-sm">Dans l'Ã©levage et les Ã©vÃ©nements</div>
+              <div className="text-gray-400 text-sm">Dans l'Élevage et les Ã©vÃ©nements</div>
             </div>
             <div className="border-l-2 border-gold pl-4">
-              <div className="text-gold font-bold mb-1">SolidaritÃ©</div>
+              <div className="text-gold font-bold mb-1">Solidarité </div>
               <div className="text-gray-400 text-sm">Entraide et partage entre passionnÃ©s</div>
             </div>
           </div>
@@ -196,7 +196,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-500 text-sm max-w-xs">
-                L'organisation cynophile officielle des CaraÃ¯bes. Unir la CaraÃ¯be, cÃ©lÃ©brer nos chiens, valoriser notre culture.
+                L'organisation cynophile officielle des Caraïbbes. Unir la CaraÃ¯be, cÃ©lÃ©brer nos chiens, valoriser notre culture.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-8">
