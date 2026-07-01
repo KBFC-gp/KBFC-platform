@@ -175,9 +175,11 @@ export default function Home() {
               <div className="text-gold font-bold mb-1">Excellence</div>
               <div className="text-gray-400 text-sm">Dans l'élevage et les événements</div>
              </div>
-              <div className="border-l-2 border-gold pl-4">
+            <div className="border-l-2 border-gold pl-4">
           <div className="text-gold font-bold mb-1">Solidarité</div>
           <div className="text-gray-400 text-sm">Une communauté unie autour de la passion canine</div>
+        </div>
+
         </div>
       </div>
     </section>
