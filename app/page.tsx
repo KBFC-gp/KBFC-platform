@@ -1,5 +1,4 @@
 export default function Home() {
-  return (
     <main className="min-h-screen bg-black text-white">
 
       {/* NAVBAR */}
@@ -234,7 +233,6 @@ export default function Home() {
       </footer>
 
     </main>
-  );
 }
 ENDOFFILE
 echo "OK"
