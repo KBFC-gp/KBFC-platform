@@ -176,8 +176,6 @@ export default function Home() {
               <div className="text-gray-400 text-sm">Dans l'élevage et les événements</div>
              </div>
             <p className="border-l-2 border-gold pl-4 text-gold font-bold">Solidarité — <span className="text-gray-400 font-normal text-sm">Une communauté unie autour de la passion canine</span></p>
-
-
         </div>
       </div>
     </section>
