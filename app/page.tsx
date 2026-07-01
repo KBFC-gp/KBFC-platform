@@ -166,7 +166,7 @@ export default function Home() {
             organiser des événements de qualité et rassembler les passionnés autour de valeurs fortes :
             respect, excellence, bien-être animal, culture et solidarité.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+          <div className="grid grid-cols-1 gap-6 text-left>
             <div className="border-l-2 border-gold pl-4">
               <div className="text-gold font-bold mb-1">Respect</div>
               <div className="text-gray-400 text-sm">Du chien, de l'éleveur, de la communauté</div>
@@ -174,10 +174,13 @@ export default function Home() {
             <div className="border-l-2 border-gold pl-4">
               <div className="text-gold font-bold mb-1">Excellence</div>
               <div className="text-gray-400 text-sm">Dans l'élevage et les événements</div>
-            </div>
-          </div>
+             </div>
+              <div className="border-l-2 border-gold pl-4">
+          <div className="text-gold font-bold mb-1">Solidarité</div>
+          <div className="text-gray-400 text-sm">Une communauté unie autour de la passion canine</div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* FOOTER */}
       <footer className="bg-[#050505] border-t border-gold/20 py-12 px-4">
