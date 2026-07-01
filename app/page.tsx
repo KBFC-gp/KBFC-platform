@@ -1,4 +1,4 @@
-export default function Home {
+export default function Home() {
     <main className="min-h-screen bg-black text-white">
 
       {/* NAVBAR */}
