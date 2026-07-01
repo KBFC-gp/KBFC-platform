@@ -173,8 +173,13 @@ export default function Home() {
             </div>
             <div className="border-l-2 border-gold pl-4">
               <div className="text-gold font-bold mb-1">Excellence</div>
-              <div className="text-gray-400 text-sm
-                    {/* FOOTER */}
+              <div className="text-gray-400 text-sm">Dans l'élevage et les événements</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
       <footer className="bg-[#050505] border-t border-gold/20 py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between gap-8 mb-8">
