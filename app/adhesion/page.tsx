@@ -35,7 +35,7 @@ export default function AdhesionPage() {
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             <div className="bg-[#111] border border-gold/20 rounded-2xl p-8 hover:border-gold/60 transition-colors">
               <div className="text-gold font-black text-2xl mb-2">Membre Standard</div>
-              <div className="text-4xl font-black text-white mb-1">30<span className="text-gold text-xl">EUR</span></div>
+              <div className="text-4xl font-black text-white mb-1">37<span className="text-gold text-xl">EUR</span></div>
               <div className="text-gray-400 text-sm mb-6">par an</div>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-gray-300 text-sm">
@@ -62,7 +62,7 @@ export default function AdhesionPage() {
             <div className="bg-gradient-to-br from-[#1a1400] to-[#0d0d0d] border-2 border-gold rounded-2xl p-8 relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-black text-xs font-black px-4 py-1 rounded-full">POPULAIRE</div>
               <div className="text-gold font-black text-2xl mb-2">Membre Premium</div>
-              <div className="text-4xl font-black text-white mb-1">60<span className="text-gold text-xl">EUR</span></div>
+              <div className="text-4xl font-black text-white mb-1">77<span className="text-gold text-xl">EUR</span></div>
               <div className="text-gray-400 text-sm mb-6">par an</div>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-gray-300 text-sm">
@@ -91,7 +91,7 @@ export default function AdhesionPage() {
 
             <div className="bg-[#111] border border-gold/20 rounded-2xl p-8 hover:border-gold/60 transition-colors">
               <div className="text-gold font-black text-2xl mb-2">Club Affilié</div>
-              <div className="text-4xl font-black text-white mb-1">150<span className="text-gold text-xl">EUR</span></div>
+              <div className="text-4xl font-black text-white mb-1">137<span className="text-gold text-xl">EUR</span></div>
               <div className="text-gray-400 text-sm mb-6">par an</div>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-gray-300 text-sm">
