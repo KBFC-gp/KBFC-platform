@@ -27,7 +27,7 @@ export default function Home() {
 
       <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         <Image
-          src="/banner-kbfc.jpg"
+          src="/banner-kbfc.jpg.PNG"
           alt="Karibbean Bully Fanatics Club"
           fill
           priority
