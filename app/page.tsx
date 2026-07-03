@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -24,7 +25,15 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="relative min-h-screen flex items-center justify-center pt-20">
+      <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <Image
+          src="/banner-kbfc.jpg"
+          alt="Karibbean Bully Fanatics Club"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
           <img src="/logo.png.PNG" alt="KBFC" className="h-48 w-48 mx-auto mb-8 object-contain" />
           <h1 className="text-5xl md:text-7xl font-black text-gold mb-4">KBFC</h1>
@@ -143,5 +152,3 @@ export default function Home() {
     </main>
   );
 }
-
-
