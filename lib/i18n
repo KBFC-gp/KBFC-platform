@@ -1,0 +1,6 @@
+app/
+  ...
+lib/
+  supabase.ts
+  i18n/
+    translations.ts
