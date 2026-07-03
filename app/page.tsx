@@ -33,7 +33,7 @@ export default function Home() {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
           <img src="/logo.png.PNG" alt="KBFC" className="h-48 w-48 mx-auto mb-8 object-contain" />
           <h1 className="text-5xl md:text-7xl font-black text-gold mb-4">KBFC</h1>
