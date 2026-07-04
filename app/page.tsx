@@ -185,4 +185,9 @@ export default function Home() {
             {t.footer.copyright}
           </div>
         </div>
-      
+            </footer>
+
+    </main>
+  );
+}
+
