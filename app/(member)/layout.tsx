@@ -13,7 +13,7 @@ export default async function MemberLayout({
   } = await supabase.auth.getUser()
 
   if (!user) {
-    redirect('/login')
+    redirect('/connexion')
   }
 
   return (
