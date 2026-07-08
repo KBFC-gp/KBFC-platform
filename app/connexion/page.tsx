@@ -14,6 +14,7 @@ export default function ConnexionPage() {
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault()
+        alert('Le bouton fonctionne !')
     setError('')
     setLoading(true)
 
