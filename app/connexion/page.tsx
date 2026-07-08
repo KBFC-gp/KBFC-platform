@@ -1,6 +1,38 @@
-import Link from "next/link";
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
+import { supabase } from '@/lib/supabase'
 
 export default function ConnexionPage() {
+  const router = useRouter()
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
+
+  async function handleLogin(e: React.FormEvent) {
+    e.preventDefault()
+    setError('')
+    setLoading(true)
+
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    })
+
+    setLoading(false)
+
+    if (error) {
+      setError("Email ou mot de passe incorrect.")
+      return
+    }
+
+    router.push('/dashboard')
+    router.refresh()
+  }
+
   return (
     <main className="min-h-screen bg-black text-white flex items-center justify-center px-4">
 
@@ -13,23 +45,45 @@ export default function ConnexionPage() {
           <p className="text-gray-400 mt-2">Connectez-vous a votre compte KBFC</p>
         </div>
 
-        <div className="bg-[#111] border border-gold/20 rounded-2xl p-8">
+        <form onSubmit={handleLogin} className="bg-[#111] border border-gold/20 rounded-2xl p-8">
           <div className="space-y-4 mb-6">
             <div>
               <label className="text-gray-400 text-sm mb-1 block">Email</label>
-              <input type="email" placeholder="votre@email.com" className="w-full bg-black border border-gold/30 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:border-gold focus:outline-none" />
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="votre@email.com"
+                className="w-full bg-black border border-gold/30 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:border-gold focus:outline-none"
+              />
             </div>
             <div>
               <label className="text-gray-400 text-sm mb-1 block">Mot de passe</label>
-              <input type="password" placeholder="Votre mot de passe" className="w-full bg-black border border-gold/30 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:border-gold focus:outline-none" />
+              <input
+                type="password"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Votre mot de passe"
+                className="w-full bg-black border border-gold/30 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:border-gold focus:outline-none"
+              />
             </div>
             <div className="flex justify-end">
               <Link href="/contact" className="text-gold text-sm hover:underline">Mot de passe oublie ?</Link>
             </div>
           </div>
 
-          <button className="w-full bg-gold text-black py-3 rounded-xl font-bold hover:bg-yellow-500 transition-colors mb-4">
-            Se connecter
+          {error && (
+            <p className="text-red-500 text-sm mb-4 text-center">{error}</p>
+          )}
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full bg-gold text-black py-3 rounded-xl font-bold hover:bg-yellow-500 transition-colors mb-4 disabled:opacity-50"
+          >
+            {loading ? 'Connexion...' : 'Se connecter'}
           </button>
 
           <div className="border-t border-gold/10 pt-4 text-center">
@@ -38,13 +92,7 @@ export default function ConnexionPage() {
               Devenir membre
             </Link>
           </div>
-        </div>
-
-        <div className="mt-6 bg-[#111] border border-gold/20 rounded-2xl p-6 text-center">
-          <div className="text-gold font-bold mb-2">Systeme en cours de configuration</div>
-          <p className="text-gray-400 text-sm">L espace membre sera pleinement fonctionnel tres prochainement. Contactez-nous pour toute question.</p>
-          <Link href="/contact" className="inline-block mt-3 text-gold text-sm hover:underline">Nous contacter</Link>
-        </div>
+        </form>
 
         <div className="text-center mt-6">
           <Link href="/" className="text-gray-600 text-sm hover:text-gold transition-colors">Retour a l accueil</Link>
@@ -52,5 +100,5 @@ export default function ConnexionPage() {
       </div>
 
     </main>
-  );
+  )
 }
