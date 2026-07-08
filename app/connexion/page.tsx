@@ -14,7 +14,7 @@ export default function ConnexionPage() {
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault()
-        alert('Le bouton fonctionne !')
+    alert('Tentative de connexion pour: ' + email)
     setError('')
     setLoading(true)
 
@@ -26,10 +26,12 @@ export default function ConnexionPage() {
     setLoading(false)
 
     if (error) {
+      alert('Erreur Supabase: ' + error.message)
       setError("Email ou mot de passe incorrect.")
       return
     }
 
+    alert('Connexion réussie ! Redirection...')
     router.push('/dashboard')
     router.refresh()
   }
